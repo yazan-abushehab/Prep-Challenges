@@ -27,8 +27,14 @@
 // ["Customer Name :Romio Joliat , Age :35", "Customer Name :Mario Ristrova , Age :39", ... ]
 
 const customerAndAge = (obj) => {
-  split
   // write your code here
+  let aa = Object.keys(obj);
+  let arr = [];
+  aa.forEach((aa) => {
+   let gg = (`Customer Name :${aa} , Age :${obj[aa]}`)
+    arr.push(gg)
+  });
+  return(arr)
 };
 // -------------------------------------------------------------------------------------------------------
 
