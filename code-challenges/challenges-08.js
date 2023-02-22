@@ -28,12 +28,11 @@
 
 const customerAndAge = (obj) => {
   // write your code here
-  let aa = Object.keys(obj);
   let arr = [];
-  aa.forEach((aa) => {
-   let gg = (`Customer Name :${aa} , Age :${obj[aa]}`)
+  for (const property in obj) {
+   let gg = (`Customer Name :${property} , Age :${obj[property]}`)
     arr.push(gg)
-  });
+  };
   return(arr)
 };
 // -------------------------------------------------------------------------------------------------------
