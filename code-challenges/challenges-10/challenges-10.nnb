@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function birthdayCakeCandles(candles) {\n    // Write your code here\n    let sum =0;\n    let max =0;\n    let max2 = 0;\n    for (let i=0;i<candles.length;i++){\n        if (candles[i] > max){\n              max = candles [i]\n       }\n     } //console.log(max);\n    for (let i=0;i<candles.length;i++){\n        if (candles[i]=== max){\n            sum = sum +1; \n        }\n    }\n    //console.log(sum);\n     return sum ;\n}"
             ],
             "outputs": []
         },
@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function compareTriplets(a, b) {\n    let result = [];\n    let sum = 0 ;\n    let sum2 = 0 ;\n    for (let i=0;i<a.length;i++){\n        if(a[i]>b[i]){\n            sum =sum +1;\n        }\n        if(a[i]<b[i]){\n            sum2 =sum2 +1;\n        }\n    }\n    // console.log (sum);\n    // console.log (sum2);\n    result.push(sum);\n    result.push(sum2);\n    // console.log (result);\n    return result;\n}\n// compareTriplets([4,2,3], [2,2,4]);"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function migratoryBirds(arr) {\n    // Write your code here\n    let reslut = [];\n    let sum1 = 0;\n    let sum2 = 0;\n    let sum3 = 0;\n    let sum4 = 0;\n    let sum5 = 0;\n    for (let i=0;i<arr.length;i++){\n        if(arr[i] === 1){\n            sum1 = sum1 +1 ;\n        }\n        else if (arr[i] === 2){\n            sum2 = sum2 +1 ;\n        }\n        else if (arr[i] === 3){\n            sum3 = sum3 +1 ;\n        }\n        else if (arr[i] === 4){\n            sum4 = sum4 +1 ;\n        }\n        else if (arr[i] === 5){\n            sum5 = sum5 +1 ;\n        }\n    }\n        reslut.push(sum1);\n        reslut.push(sum2);\n        reslut.push(sum3);\n        reslut.push(sum4);\n        reslut.push(sum5);\n    console.log (reslut)\n    let max = 0 ;\n    let result2 = [];\n    for (let i=0;i<reslut.length;i++){\n        if (reslut[i]>max){\n            max = reslut[i];\n        }\n    }console.log (max);\n    for (let i=0;i<reslut.length;i++){\n        if (reslut[i]===max){\n            result2.push(i+1)\n        }\n    }console.log (result2[0]);\n    return result2[0];\n}\n\nmigratoryBirds([1,1,1,1,2,5,5,4,3,3,3,3])"
             ],
             "outputs": []
         }
