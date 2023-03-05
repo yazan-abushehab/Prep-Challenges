@@ -42,7 +42,7 @@ const LastWord = (str) => {
 const LastWord_2 = (str) => {
     // write your code here
     const lastWord2 = str.split(" ");
-    return lastWord2[lastWord2.length-1];
+    return lastWord2[lastWord2.length - 1];
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -67,17 +67,24 @@ const LastWord_2 = (str) => {
 const replaceWords = (str) => {
     // write your code here
     let str2 = str.split(" ");
-    console.log(str2)
-    let u=(str2.indexOf('I'));
-    let u2=(str2.splice(u,1,'We'));
-    let c=(str2.indexOf('am'));
-    let c2=(str2.splice(c,1,'are'));
-    let d=(str2.indexOf('was'));
-    let d2=(str2.splice(d,1,'were'));
+    //console.log(str2)
+    let u = (str2.indexOf('I'));
+    if (u >= 0) {
+        let u2 = (str2.splice(u, 1, 'We'));
+    }
+    let c = (str2.indexOf('am'));
+    if (c >= 0) {
+        let c2 = (str2.splice(c, 1, 'are'));
+    }
+
+    let d = (str2.indexOf('was'));
+    if (d >= 0) {
+        let d2 = (str2.splice(d, 1, 'were'));
+    }
     let str3 = str2.join(" ")
-     console.log(str2)
-     console.log(str3)
-     return str3;
+    // console.log(str2)
+    // console.log(str3)
+    return str3;
 }
 // -------------------------------------------------------------------------------------------------------
 
